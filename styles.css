@@ -145,7 +145,7 @@ h4 { font-size: 1.05rem; font-weight: 700; }
 
 /* ---------- hero ---------- */
 .hero { padding: 140px 0 40px; position: relative; }
-@media (max-width: 880px) { .hero { overflow-x: hidden; } }
+@media (max-width: 880px) { .hero { overflow-x: clip; } }
 @media (max-width: 720px) { .hero { padding: 96px 0 32px; } }
 .hero::before {
   /* halo azafrán suave */
