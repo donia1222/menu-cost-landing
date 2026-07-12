@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://menu-calculate.com/sitemap.xml

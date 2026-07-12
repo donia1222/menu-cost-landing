@@ -41,7 +41,7 @@ Subir la carpeta completa al hosting (FTP/SFTP). No requiere Node ni servidor di
 1. **Enlaces de descarga** — sustituir los `href="#"` de los badges (4 sitios: 2 en el hero, 2 en el CTA final, marcados con comentario) por:
    - App Store: `https://apps.apple.com/app/id…`
    - Google Play: `https://play.google.com/store/apps/details?id=ch.lweb.mise`
-2. **App Store Connect** — usar como Privacy Policy URL: `https://<dominio>/privacy.html`.
+2. **App Store Connect** — usar como Privacy Policy URL: `https://menu-calculate.com/privacy.html`.
 3. La app (pantalla Información y paywall) enlaza a `privacy.html` / `terms.html` desde `src/config/enlaces.ts`.
 
 ## Editar contenido
