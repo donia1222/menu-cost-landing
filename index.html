@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu Calculate — El precio justo para cada plato</title>
+  <meta name="description" content="Calcula el coste, el food cost y el beneficio de cada plato de tu carta en segundos. Díselo con tu voz y el bot hace el resto." />
+  <link rel="icon" type="image/png" href="assets/icon.png" />
+  <link rel="apple-touch-icon" href="assets/icon.png" />
+  <meta property="og:title" content="Menu Calculate — El precio justo para cada plato" />
+  <meta property="og:description" content="Coste, food cost y beneficio de tu carta en segundos. Con tu voz." />
+  <meta property="og:image" content="assets/restaurante-descuentos.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="assets/wordmark-oscuro.png" />
+          <img src="assets/wordmark-claro.png" alt="Menu Calculate" class="brand-word" />
+        </picture>
+      </a>
+      <nav class="nav-links">
+        <a href="#funciones" data-i18n="nav_funciones">Funciones</a>
+        <a href="#como" data-i18n="nav_como">Cómo funciona</a>
+        <a href="#rentabilidad" data-i18n="nav_rent">Rentabilidad</a>
+      </nav>
+
+      <!-- selector de idioma -->
+      <div class="lang" id="lang">
+        <button class="lang-btn" id="langBtn" aria-haspopup="listbox" aria-expanded="false">
+          <svg viewBox="0 0 24 24" class="ic"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm7.93 9h-3.02a15.7 15.7 0 0 0-1.1-5.1A8.03 8.03 0 0 1 19.93 11ZM12 4.06c.9 1.2 1.7 3.02 2.07 5.94H9.93C10.3 7.08 11.1 5.26 12 4.06ZM4.07 13h3.02c.13 1.87.5 3.6 1.1 5.1A8.03 8.03 0 0 1 4.07 13Zm3.02-2H4.07a8.03 8.03 0 0 1 4.12-5.1 15.7 15.7 0 0 0-1.1 5.1ZM12 19.94c-.9-1.2-1.7-3.02-2.07-5.94h4.14c-.37 2.92-1.17 4.74-2.07 5.94ZM14.9 18.1c.6-1.5.97-3.23 1.1-5.1h3.02a8.03 8.03 0 0 1-4.12 5.1Z"/></svg>
+          <span id="langCode">ES</span>
+          <svg viewBox="0 0 24 24" class="ic ic-chev"><path d="M12 15.5a1 1 0 0 1-.7-.3l-5-5a1 1 0 1 1 1.4-1.4l4.3 4.29 4.3-4.3a1 1 0 1 1 1.4 1.42l-5 5a1 1 0 0 1-.7.29Z"/></svg>
+        </button>
+        <ul class="lang-menu" id="langMenu" role="listbox">
+          <li role="option" data-lang="es">Español</li>
+          <li role="option" data-lang="de">Deutsch</li>
+          <li role="option" data-lang="en">English</li>
+          <li role="option" data-lang="fr">Français</li>
+          <li role="option" data-lang="it">Italiano</li>
+        </ul>
+      </div>
+
+      <a class="btn btn-small" href="#descargar">
+        <svg viewBox="0 0 24 24" class="ic"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.08ZM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25Z"/></svg>
+        <span data-i18n="nav_descargar">Descargar</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy reveal">
+          <p class="kicker" data-i18n="hero_kicker">Para tu restaurante</p>
+          <h1 data-i18n-html="hero_h1">¿Sabes cuánto te deja <em>cada plato</em> de tu carta?</h1>
+          <p class="lead" data-i18n="hero_lead">Menu Calculate calcula el coste, el food cost y el beneficio de tus platos en segundos. Tú dices el plato con tu voz — el bot hace el resto.</p>
+          <div class="store-badges">
+            <!-- Cuando la app esté publicada, pega aquí las URLs de las tiendas -->
+            <a class="store-badge" href="#" aria-label="Download on the App Store">
+              <img src="assets/app-store.svg" alt="Download on the App Store" />
+            </a>
+            <a class="store-badge" href="#" aria-label="Get it on Google Play">
+              <img src="assets/google-play.png" alt="Get it on Google Play" />
+            </a>
+          </div>
+          <div class="hero-ctas">
+            <a class="btn btn-ghost" href="#como" data-i18n="hero_cta2">Ver cómo funciona</a>
+          </div>
+          <ul class="hero-mini">
+            <li><svg viewBox="0 0 24 24" class="ic ic-accent"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm4.3 7.61-5 6a1 1 0 0 1-.79.39 1 1 0 0 1-.75-.39l-2.3-2.8a1 1 0 1 1 1.54-1.27l1.53 1.86 4.24-5.07a1 1 0 0 1 1.53 1.28Z"/></svg> <span data-i18n="hero_mini1">Sin hojas de cálculo</span></li>
+            <li><svg viewBox="0 0 24 24" class="ic ic-accent"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm4.3 7.61-5 6a1 1 0 0 1-.79.39 1 1 0 0 1-.75-.39l-2.3-2.8a1 1 0 1 1 1.54-1.27l1.53 1.86 4.24-5.07a1 1 0 0 1 1.53 1.28Z"/></svg> <span data-i18n="hero_mini2">En 5 idiomas</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-media reveal delay-1">
+          <div class="video-card tilt">
+            <video id="heroVideo" src="assets/hero-es.mp4" autoplay muted loop playsinline></video>
+          </div>
+          <!-- chips flotantes -->
+          <div class="chip chip-fc float-a">
+            <span class="dot dot-good"></span> <span data-i18n="chip_fc">Food cost</span>&nbsp;<strong>28&nbsp;%</strong>
+          </div>
+          <div class="chip chip-ben float-b">
+            <span data-i18n="chip_ben">Beneficio</span>&nbsp;<strong>+16.50&nbsp;CHF</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE DE PLATOS ============ -->
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee-track" id="marquee">
+        <figure><img src="assets/pizza.png" alt=""><figcaption><span data-i18n="dish_pizza">Pizza</span> · FC 24&nbsp;%</figcaption></figure>
+        <figure><img src="assets/bolonesa.png" alt=""><figcaption><span data-i18n="dish_bolonesa">Bolognesa</span> · FC 27&nbsp;%</figcaption></figure>
+        <figure><img src="assets/sushi.png" alt=""><figcaption><span data-i18n="dish_sushi">Sushi</span> · FC 35&nbsp;%</figcaption></figure>
+        <figure><img src="assets/filete.png" alt=""><figcaption><span data-i18n="dish_filete">Entrecot</span> · FC 38&nbsp;%</figcaption></figure>
+        <figure><img src="assets/ensalada.png" alt=""><figcaption><span data-i18n="dish_ensalada">Ensalada</span> · FC 18&nbsp;%</figcaption></figure>
+        <figure><img src="assets/risotto.png" alt=""><figcaption><span data-i18n="dish_risotto">Risotto</span> · FC 22&nbsp;%</figcaption></figure>
+        <figure><img src="assets/hamburguesa.png" alt=""><figcaption><span data-i18n="dish_burger">Burger</span> · FC 29&nbsp;%</figcaption></figure>
+        <figure><img src="assets/sopa.png" alt=""><figcaption><span data-i18n="dish_sopa">Sopa</span> · FC 14&nbsp;%</figcaption></figure>
+        <figure><img src="assets/postre.png" alt=""><figcaption><span data-i18n="dish_postre">Postre</span> · FC 21&nbsp;%</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- ============ FUNCIONES ============ -->
+    <section class="section" id="funciones">
+      <div class="wrap">
+        <p class="kicker reveal" data-i18n="fun_kicker">Funciones</p>
+        <h2 class="reveal" data-i18n="fun_h2">Todo lo que necesitas para poner precios con cabeza</h2>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-img"><img src="assets/bot-magico.png" alt="" loading="lazy"></div>
+            <h3 data-i18n="fun1_t">Díselo con tu voz</h3>
+            <p data-i18n="fun1_p">«Espaguetis a la bolognesa». El bot desglosa el plato en ingredientes con cantidades y precios reales de tu zona.</p>
+          </article>
+
+          <article class="card reveal delay-1">
+            <div class="card-img"><img src="assets/biblioteca-precios.png" alt="" loading="lazy"></div>
+            <h3 data-i18n="fun2_t">Escanea tus recibos</h3>
+            <p data-i18n="fun2_p">Foto a la cuenta de la compra y todos los productos entran solos en tu biblioteca de precios. Decenas de artículos en segundos.</p>
+            <span class="tag-pro">PRO</span>
+          </article>
+
+          <article class="card reveal delay-2">
+            <div class="card-img"><img src="assets/rentabilidad.png" alt="" loading="lazy"></div>
+            <h3 data-i18n="fun3_t">Rentabilidad clara</h3>
+            <p data-i18n="fun3_p">Ranking de platos por beneficio y food cost, matriz margen × ventas y precio de venta sugerido con IVA incluido.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CÓMO FUNCIONA ============ -->
+    <section class="section section-alt" id="como">
+      <div class="wrap como-grid">
+        <div class="como-copy">
+          <p class="kicker reveal" data-i18n="como_kicker">Cómo funciona</p>
+          <h2 class="reveal" data-i18n="como_h2">Tres pasos. Sin calculadora.</h2>
+
+          <ol class="pasos">
+            <li class="reveal">
+              <span class="paso-n">1</span>
+              <div><h4 data-i18n="paso1_t">Di el plato</h4><p data-i18n="paso1_p">Con tu voz o escribiendo. En español, alemán, inglés, francés o italiano.</p></div>
+            </li>
+            <li class="reveal delay-1">
+              <span class="paso-n">2</span>
+              <div><h4 data-i18n="paso2_t">El bot lo desglosa</h4><p data-i18n="paso2_p">Ingredientes, cantidades y precios aparecen en cascada. Ajusta lo que quieras.</p></div>
+            </li>
+            <li class="reveal delay-2">
+              <span class="paso-n">3</span>
+              <div><h4 data-i18n="paso3_t">Decide el precio</h4><p data-i18n="paso3_p">Food cost, beneficio y precio sugerido para tu objetivo. Todo se guarda solo.</p></div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="como-media reveal delay-1">
+          <div class="video-card">
+            <video src="assets/bienvenida-2.mp4" autoplay muted loop playsinline></video>
+          </div>
+          <!-- donut animado -->
+          <div class="donut-card float-a">
+            <svg viewBox="0 0 120 120" class="donut" id="donut">
+              <circle class="donut-track" cx="60" cy="60" r="48"/>
+              <circle class="donut-arc" cx="60" cy="60" r="48" id="donutArc"/>
+            </svg>
+            <div class="donut-label">
+              <strong id="donutNum">0</strong><span>%</span>
+              <small data-i18n="donut_label">food cost</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RENTABILIDAD ============ -->
+    <section class="section" id="rentabilidad">
+      <div class="wrap rent-grid">
+        <div class="rent-copy">
+          <p class="kicker reveal" data-i18n="rent_kicker">Rentabilidad</p>
+          <h2 class="reveal" data-i18n="rent_h2">Descubre qué platos potenciar (y cuáles revisar)</h2>
+          <p class="lead reveal" data-i18n="rent_lead">Menu Calculate ordena tu carta por beneficio real. De un vistazo sabes qué plato es tu estrella y cuál te está costando dinero.</p>
+        </div>
+
+        <div class="rent-chart reveal delay-1" id="chart">
+          <div class="bar-row">
+            <span class="bar-name" data-i18n="dish_risotto">Risotto</span>
+            <div class="bar"><i style="--w:92%" class="bar-fill good"></i></div>
+            <span class="bar-val">+21.40</span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-name" data-i18n="dish_pizza">Pizza</span>
+            <div class="bar"><i style="--w:78%" class="bar-fill good"></i></div>
+            <span class="bar-val">+17.90</span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-name" data-i18n="dish_burger">Burger</span>
+            <div class="bar"><i style="--w:55%" class="bar-fill warn"></i></div>
+            <span class="bar-val">+12.10</span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-name" data-i18n="dish_sushi">Sushi</span>
+            <div class="bar"><i style="--w:34%" class="bar-fill warn"></i></div>
+            <span class="bar-val">+7.60</span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-name" data-i18n="dish_filete">Entrecot</span>
+            <div class="bar"><i style="--w:18%" class="bar-fill bad"></i></div>
+            <span class="bar-val">+3.20</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CIFRAS ============ -->
+    <section class="stats">
+      <div class="wrap stats-row">
+        <div class="stat reveal"><strong data-count="3">0</strong><span data-i18n="stat1">pasos por plato</span></div>
+        <div class="stat reveal delay-1"><strong data-count="30" data-suffix="%">0</strong><span data-i18n="stat2">food cost objetivo</span></div>
+        <div class="stat reveal delay-2"><strong data-count="5">0</strong><span data-i18n="stat3">idiomas</span></div>
+        <div class="stat reveal delay-3"><strong data-count="1">0</strong><span data-i18n="stat4">foto = toda la compra</span></div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="cta-final" id="descargar">
+      <div class="wrap cta-box reveal">
+        <img src="assets/icon.png" alt="" class="cta-icon" />
+        <h2 data-i18n="cta_h2">Empieza hoy a cobrar lo que tus platos valen</h2>
+        <p class="lead" data-i18n="cta_lead">Descarga Menu Calculate y pon tu carta a trabajar.</p>
+        <div class="store-badges store-badges-big">
+          <!-- Cuando la app esté publicada, pega aquí las URLs de las tiendas -->
+          <a class="store-badge" href="#" aria-label="Download on the App Store">
+            <img src="assets/app-store.svg" alt="Download on the App Store" />
+          </a>
+          <a class="store-badge" href="#" aria-label="Get it on Google Play">
+            <img src="assets/google-play.png" alt="Get it on Google Play" />
+          </a>
+        </div>
+        <p class="cta-nota" data-i18n="cta_nota">Próximamente en el App Store</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <img src="assets/icon.png" alt="" class="brand-icon" />
+        <span>Menu&nbsp;Calculate</span>
+      </div>
+      <nav class="footer-links">
+        <a href="mailto:info@lweb.ch" data-i18n="foot_contacto">Contacto</a>
+        <a href="privacy.html" data-i18n="foot_priv">Política de privacidad</a>
+        <a href="terms.html" data-i18n="foot_term">Términos de uso</a>
+      </nav>
+      <p class="footer-copy" data-i18n="foot_copy">© 2026 lweb.ch — Hecho con cariño en Suiza</p>
+    </div>
+  </footer>
+
+  <!-- ============ AVISO DE COOKIES (primera visita) ============ -->
+  <div class="cookies" id="cookies" hidden>
+    <svg viewBox="0 0 24 24" class="ic ic-accent cookies-ic"><path d="M12 2a10 10 0 1 0 10 10 1 1 0 0 0-1.22-.98A3.5 3.5 0 0 1 16.5 7.5a1 1 0 0 0-1-1A3.5 3.5 0 0 1 12.98 3.2 1 1 0 0 0 12 2Zm-3.5 8a1.5 1.5 0 1 1-1.5 1.5A1.5 1.5 0 0 1 8.5 10Zm2.5 6.5A1.5 1.5 0 1 1 12.5 15 1.5 1.5 0 0 1 11 16.5Zm4-3a1 1 0 1 1 1-1 1 1 0 0 1-1 1Z"/></svg>
+    <p class="cookies-txt"><span data-i18n="cookies_txt">Esta web no usa cookies de seguimiento: solo guardamos tu idioma en este navegador.</span> <a href="privacy.html" data-i18n="cookies_mas">Más info</a></p>
+    <button class="btn btn-small" id="cookiesOk" data-i18n="cookies_ok">Entendido</button>
+  </div>
+
+  <script src="i18n.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
