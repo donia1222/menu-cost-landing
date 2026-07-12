@@ -100,7 +100,17 @@ h4 { font-size: 1.05rem; font-weight: 700; }
 .nav-links { display: flex; gap: 22px; margin-left: auto; }
 .nav-links a { font-size: .95rem; font-weight: 600; color: var(--text-2); transition: color .15s; }
 .nav-links a:hover { color: var(--text); }
-@media (max-width: 720px) { .nav-links { display: none; } .nav-inner { justify-content: space-between; } }
+@media (max-width: 720px) {
+  .nav-links { display: none; }
+  .nav-inner { justify-content: space-between; height: 56px; gap: 12px; }
+  .brand-word { height: 38px; }
+  .lang-btn { padding: 6px 10px; }
+  .nav .btn-small { padding: 8px 14px; font-size: .85rem; gap: 6px; }
+}
+@media (max-width: 400px) {
+  .nav .btn-small span { display: none; }
+  .nav .btn-small { padding: 8px; }
+}
 
 /* selector de idioma */
 .lang { position: relative; }
@@ -135,6 +145,7 @@ h4 { font-size: 1.05rem; font-weight: 700; }
 
 /* ---------- hero ---------- */
 .hero { padding: 140px 0 40px; position: relative; }
+@media (max-width: 720px) { .hero { padding: 96px 0 32px; } }
 .hero::before {
   /* halo azafrán suave */
   content: ""; position: absolute; top: -30%; right: -15%;
@@ -209,6 +220,13 @@ h4 { font-size: 1.05rem; font-weight: 700; }
 }
 .marquee img { width: 84px; height: 84px; object-fit: contain; }
 .marquee figcaption { font-size: .82rem; font-weight: 700; color: var(--text-2); white-space: nowrap; }
+@media (max-width: 720px) {
+  .marquee { padding: 32px 0 8px; }
+  .marquee-track { gap: 12px; }
+  .marquee figure { min-width: 108px; padding: 12px 14px 10px; border-radius: 18px; gap: 6px; }
+  .marquee img { width: 56px; height: 56px; }
+  .marquee figcaption { font-size: .74rem; }
+}
 
 /* ---------- secciones ---------- */
 .section { padding: 96px 0; }
