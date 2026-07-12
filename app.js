@@ -20,9 +20,20 @@
     return 'es';
   }
 
+  // en móvil el hero usa el vídeo vertical; en pantallas grandes el horizontal
+  const heroVertical = window.matchMedia('(max-width: 720px)');
+  function heroSrc(lang) {
+    return heroVertical.matches
+      ? 'assets/menu-calculate-vertical-' + lang + '.mp4'
+      : 'assets/hero-' + lang + '.mp4';
+  }
+
+  let langActual = null;
+
   function aplicarIdioma(lang) {
     const d = I18N[lang];
     if (!d) return;
+    langActual = lang;
     document.documentElement.lang = lang;
     document.title = d.meta_title;
     const meta = document.querySelector('meta[name="description"]');
@@ -40,7 +51,7 @@
     // vídeo del hero con subtítulos en el idioma elegido
     const hero = document.getElementById('heroVideo');
     if (hero) {
-      const src = 'assets/hero-' + lang + '.mp4';
+      const src = heroSrc(lang);
       if (!hero.src.endsWith(src)) {
         hero.src = src;
         hero.load();
@@ -156,6 +167,22 @@
   document.getElementById('cookiesOk')?.addEventListener('click', () => {
     localStorage.setItem('mc-cookies', '1');
     cookies.hidden = true;
+  });
+
+  /* si se gira el móvil / cambia el ancho, cambiar entre vertical y horizontal */
+  heroVertical.addEventListener('change', () => {
+    if (langActual) aplicarIdioma(langActual);
+  });
+
+  /* de momento el vídeo vertical solo existe en alemán: si falta en un
+     idioma, caer a la versión alemana en vez de dejar el hero en negro */
+  const heroVid = document.getElementById('heroVideo');
+  heroVid?.addEventListener('error', () => {
+    if (heroVid.src.includes('vertical-') && !heroVid.src.endsWith('vertical-de.mp4')) {
+      heroVid.src = 'assets/menu-calculate-vertical-de.mp4';
+      heroVid.load();
+      heroVid.play().catch(() => {});
+    }
   });
 
   /* ================== VÍDEOS: asegurar autoplay ================== */

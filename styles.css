@@ -181,6 +181,11 @@ h4 { font-size: 1.05rem; font-weight: 700; }
 }
 .video-card video { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
 .tilt { transform: rotate(1.6deg); }
+@media (max-width: 720px) {
+  /* en móvil el hero lleva el vídeo vertical */
+  .hero-media .video-card { max-width: 300px; margin: 0 auto; }
+  .hero-media .video-card video { aspect-ratio: 9 / 16; }
+}
 
 /* chips flotantes */
 .chip {
