@@ -137,6 +137,9 @@
         e.target.querySelectorAll?.('[data-count]').forEach(animarContador);
         if (e.target.matches?.('[data-count]')) animarContador(e.target);
 
+        const lazyVideo = e.target.querySelector?.('video.lazy-video');
+        if (lazyVideo) lazyVideo.play().catch(() => {});
+
         io.unobserve(e.target);
       }
     },
@@ -156,7 +159,7 @@
   });
 
   /* ================== VÍDEOS: asegurar autoplay ================== */
-  document.querySelectorAll('video').forEach((v) => {
+  document.querySelectorAll('video:not(.lazy-video)').forEach((v) => {
     v.play().catch(() => {
       /* si el navegador lo bloquea, se queda el primer frame */
     });
