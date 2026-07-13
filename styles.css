@@ -238,6 +238,36 @@ h4 { font-size: 1.05rem; font-weight: 700; }
 .section { padding: 96px 0; }
 .section-alt { background: var(--bg-el); border-block: 1px solid var(--line); }
 
+/* capturas: panorama con scroll lateral (la onda azafrán fluye entre paneles) */
+.shots { padding-bottom: 56px; overflow: hidden; }
+.shots-scroll {
+  margin-top: 40px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  /* el primer panel arranca alineado con .wrap; el resto se descubre deslizando */
+  padding: 14px max(24px, calc((100% - 1120px) / 2 + 24px)) 30px;
+}
+.shots-scroll::-webkit-scrollbar { display: none; }
+.shots-strip {
+  display: flex;
+  width: max-content;
+  border-radius: 26px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.shots-strip img {
+  height: clamp(430px, 62vh, 640px);
+  width: auto;
+  display: block;
+  scroll-snap-align: center;
+}
+@media (max-width: 720px) {
+  .shots-scroll { padding: 10px 20px 24px; scroll-snap-type: x proximity; }
+  .shots-strip img { height: 74vh; max-height: 560px; }
+}
+
 /* funciones */
 .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 44px; }
 @media (max-width: 880px) { .cards { grid-template-columns: 1fr; } }

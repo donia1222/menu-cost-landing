@@ -27,6 +27,8 @@ const I18N = {
 
     fun_kicker: 'Funciones',
     fun_h2: 'Todo lo que necesitas para poner precios con cabeza',
+    caps_kicker: 'La app',
+    caps_h2: 'Míralo por dentro',
     fun1_t: 'Díselo con tu voz',
     fun1_p: '«Espaguetis a la bolognesa». El bot desglosa el plato en ingredientes con cantidades y precios reales de tu zona.',
     fun2_t: 'Escanea tus recibos',
@@ -91,6 +93,8 @@ const I18N = {
 
     fun_kicker: 'Funktionen',
     fun_h2: 'Alles, was du für kluge Preise brauchst',
+    caps_kicker: 'Die App',
+    caps_h2: 'Wirf einen Blick hinein',
     fun1_t: 'Sag es mit deiner Stimme',
     fun1_p: '«Spaghetti Bolognese». Der Bot zerlegt das Gericht in Zutaten mit Mengen und echten Preisen aus deiner Region.',
     fun2_t: 'Scanne deine Belege',
@@ -155,6 +159,8 @@ const I18N = {
 
     fun_kicker: 'Features',
     fun_h2: 'Everything you need to price with confidence',
+    caps_kicker: 'The app',
+    caps_h2: 'Take a look inside',
     fun1_t: 'Say it with your voice',
     fun1_p: '“Spaghetti bolognese”. The bot breaks the dish into ingredients with quantities and real prices from your area.',
     fun2_t: 'Scan your receipts',
@@ -219,6 +225,8 @@ const I18N = {
 
     fun_kicker: 'Fonctions',
     fun_h2: 'Tout ce qu’il faut pour fixer vos prix sereinement',
+    caps_kicker: 'L’app',
+    caps_h2: 'Jetez un œil à l’intérieur',
     fun1_t: 'Dites-le avec votre voix',
     fun1_p: '« Spaghettis bolognaise ». Le bot décompose le plat en ingrédients avec quantités et prix réels de votre région.',
     fun2_t: 'Scannez vos tickets',
@@ -283,6 +291,8 @@ const I18N = {
 
     fun_kicker: 'Funzioni',
     fun_h2: 'Tutto quello che serve per prezzi intelligenti',
+    caps_kicker: 'L’app',
+    caps_h2: 'Dai un’occhiata dentro',
     fun1_t: 'Dillo con la tua voce',
     fun1_p: '«Spaghetti alla bolognese». Il bot scompone il piatto in ingredienti con quantità e prezzi reali della tua zona.',
     fun2_t: 'Scansiona gli scontrini',
