@@ -96,6 +96,7 @@ h4 { font-size: 1.05rem; font-weight: 700; }
 .nav-inner { display: flex; align-items: center; gap: 28px; height: 68px; }
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.1rem; }
 .brand-icon { width: 34px; height: 34px; border-radius: 9px; }
+.brand-icon-nav { width: 40px; height: 40px; border-radius: 11px; display: block; }
 .brand-word { height: 56px; width: auto; display: block; }
 .nav-links { display: flex; gap: 22px; margin-left: auto; }
 .nav-links a { font-size: .95rem; font-weight: 600; color: var(--text-2); transition: color .15s; }
@@ -103,6 +104,7 @@ h4 { font-size: 1.05rem; font-weight: 700; }
 @media (max-width: 720px) {
   .nav-links { display: none; }
   .nav-inner { justify-content: space-between; height: 56px; gap: 12px; }
+  .brand-icon-nav { width: 30px; height: 30px; border-radius: 8px; }
   .brand-word { height: 38px; }
   .lang-btn { padding: 6px 10px; }
   .nav .btn-small { padding: 8px 14px; font-size: .85rem; gap: 6px; }
