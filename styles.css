@@ -408,6 +408,39 @@ h4 { font-size: 1.05rem; font-weight: 700; }
   .proximamente::before { animation: none; }
 }
 
+/* planes: gratis vs pro */
+.planes-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+  margin-top: 34px; align-items: start;
+}
+.plan {
+  position: relative;
+  background: var(--bg); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 32px 28px;
+}
+.plan-pro {
+  background: linear-gradient(160deg, color-mix(in srgb, var(--accent) 12%, var(--bg-el)), var(--bg-el) 60%);
+  border-color: color-mix(in srgb, var(--accent) 40%, var(--line));
+  box-shadow: var(--shadow);
+}
+.plan-badge {
+  position: absolute; top: -12px; right: 24px;
+  padding: 5px 12px; border-radius: 999px;
+  background: var(--accent); color: var(--accent-ink);
+  font-size: .72rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase;
+}
+.plan-nombre { margin: 0; font-size: 1.5rem; }
+.plan-sub { margin: 4px 0 0; color: var(--text-2); font-size: .92rem; }
+.plan-lista { list-style: none; margin: 22px 0 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.plan-lista li { display: flex; align-items: center; gap: 10px; font-weight: 600; }
+/* Los límites del plan gratis no son una virtud: se marcan aparte para no
+   venderlos como si lo fueran. */
+.plan-limite { color: var(--text-2); font-weight: 500; }
+@media (max-width: 720px) {
+  .planes-grid { grid-template-columns: 1fr; }
+  .plan { padding: 28px 22px; }
+}
+
 /* footer */
 .footer { border-top: 1px solid var(--line); padding: 44px 0; }
 .footer-inner { display: flex; flex-direction: column; align-items: center; gap: 18px; text-align: center; }
