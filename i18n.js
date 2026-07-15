@@ -58,7 +58,7 @@ const I18N = {
     cta_h2: 'Empieza hoy a cobrar lo que tus platos valen',
     cta_lead: 'Descarga Menu Calculate y pon tu carta a trabajar.',
     cta_btn: 'Descargar en el App Store',
-    cta_nota: 'Próximamente en el App Store',
+    proximamente: 'Muy pronto en App Store y Google Play',
 
     cookies_txt: 'Esta web no usa cookies de seguimiento: solo guardamos tu idioma en este navegador.',
     cookies_mas: 'Más info',
@@ -124,7 +124,7 @@ const I18N = {
     cta_h2: 'Verlange ab heute, was deine Gerichte wert sind',
     cta_lead: 'Lade Menu Calculate und lass deine Karte für dich arbeiten.',
     cta_btn: 'Im App Store laden',
-    cta_nota: 'Bald im App Store',
+    proximamente: 'Bald im App Store und bei Google Play',
 
     cookies_txt: 'Diese Website verwendet keine Tracking-Cookies: Wir speichern nur deine Sprache in diesem Browser.',
     cookies_mas: 'Mehr Infos',
@@ -190,7 +190,7 @@ const I18N = {
     cta_h2: 'Start charging what your dishes are worth',
     cta_lead: 'Download Menu Calculate and put your menu to work.',
     cta_btn: 'Download on the App Store',
-    cta_nota: 'Coming soon to the App Store',
+    proximamente: 'Coming soon to the App Store and Google Play',
 
     cookies_txt: 'This site uses no tracking cookies: we only store your language in this browser.',
     cookies_mas: 'More info',
@@ -256,7 +256,7 @@ const I18N = {
     cta_h2: 'Facturez enfin vos plats à leur juste valeur',
     cta_lead: 'Téléchargez Menu Calculate et mettez votre carte au travail.',
     cta_btn: 'Télécharger sur l’App Store',
-    cta_nota: 'Bientôt sur l’App Store',
+    proximamente: 'Bientôt sur l’App Store et Google Play',
 
     cookies_txt: 'Ce site n’utilise aucun cookie de suivi : nous ne stockons que votre langue dans ce navigateur.',
     cookies_mas: 'En savoir plus',
@@ -322,7 +322,7 @@ const I18N = {
     cta_h2: 'Inizia oggi a farti pagare quanto valgono i tuoi piatti',
     cta_lead: 'Scarica Menu Calculate e metti il tuo menù al lavoro.',
     cta_btn: 'Scarica dall’App Store',
-    cta_nota: 'Presto sull’App Store',
+    proximamente: 'Presto su App Store e Google Play',
 
     cookies_txt: 'Questo sito non usa cookie di tracciamento: salviamo solo la tua lingua in questo browser.',
     cookies_mas: 'Maggiori info',
