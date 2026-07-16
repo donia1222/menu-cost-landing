@@ -362,31 +362,6 @@ h4 { font-size: 1.05rem; font-weight: 700; }
 }
 .cta-box .lead { margin: 0 auto; }
 .cta-icon { width: 84px; height: 84px; border-radius: 20px; box-shadow: var(--shadow); }
-/* Banner "muy pronto" bajo los badges de las tiendas. Los enlaces aún no llevan
-   a ninguna parte: esto explica por qué. */
-.proximamente {
-  align-self: flex-start;          /* si no, el flex del hero lo estira a todo el ancho */
-  display: inline-flex; align-items: center; gap: 9px;
-  margin: 0; padding: 9px 15px;
-  border-radius: 999px;
-  font-size: .85rem; font-weight: 700; line-height: 1;
-  color: var(--accent);
-  background: color-mix(in srgb, var(--accent) 12%, transparent);
-  border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
-}
-.cta-box .proximamente { align-self: center; }
-.proximamente::before {
-  content: ""; width: 8px; height: 8px; border-radius: 50%;
-  background: var(--accent); flex: none;
-  animation: pulso 2s ease-in-out infinite;
-}
-@keyframes pulso {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50%      { opacity: .45; transform: scale(.8); }
-}
-@media (prefers-reduced-motion: reduce) {
-  .proximamente::before { animation: none; }
-}
 
 /* planes: gratis vs pro */
 .planes-grid {
