@@ -204,7 +204,9 @@ h4 { font-size: 1.05rem; font-weight: 700; }
   border: 1px solid var(--line); background: var(--bg-el);
   box-shadow: var(--shadow);
 }
-.video-card video { width: 100%; aspect-ratio: 9 / 16; object-fit: cover; }
+.video-card video { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+/* solo el reel del hero es vertical; el de "cómo funciona" sigue en 16:9 */
+.hero-media .video-card video { aspect-ratio: 9 / 16; }
 .tilt { transform: rotate(1.6deg); }
 @media (max-width: 720px) {
   .hero-media { max-width: 300px; }
