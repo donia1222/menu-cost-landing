@@ -21,9 +21,8 @@ const I18N = {
     chip_fc: 'Food cost',
     chip_ben: 'Beneficio',
 
-    dish_pizza: 'Pizza', dish_bolonesa: 'Bolognesa', dish_sushi: 'Sushi',
-    dish_filete: 'Entrecot', dish_ensalada: 'Ensalada', dish_risotto: 'Risotto',
-    dish_burger: 'Burger', dish_sopa: 'Sopa', dish_postre: 'Postre',
+    dish_pizza: 'Pizza', dish_sushi: 'Sushi', dish_filete: 'Entrecot',
+    dish_risotto: 'Risotto', dish_burger: 'Burger',
 
     fun_kicker: 'Funciones',
     fun_h2: 'Todo lo que necesitas para poner precios con cabeza',
@@ -108,9 +107,8 @@ const I18N = {
     chip_fc: 'Food Cost',
     chip_ben: 'Gewinn',
 
-    dish_pizza: 'Pizza', dish_bolonesa: 'Bolognese', dish_sushi: 'Sushi',
-    dish_filete: 'Entrecôte', dish_ensalada: 'Salat', dish_risotto: 'Risotto',
-    dish_burger: 'Burger', dish_sopa: 'Suppe', dish_postre: 'Dessert',
+    dish_pizza: 'Pizza', dish_sushi: 'Sushi', dish_filete: 'Entrecôte',
+    dish_risotto: 'Risotto', dish_burger: 'Burger',
 
     fun_kicker: 'Funktionen',
     fun_h2: 'Alles, was du für kluge Preise brauchst',
@@ -195,9 +193,8 @@ const I18N = {
     chip_fc: 'Food cost',
     chip_ben: 'Profit',
 
-    dish_pizza: 'Pizza', dish_bolonesa: 'Bolognese', dish_sushi: 'Sushi',
-    dish_filete: 'Steak', dish_ensalada: 'Salad', dish_risotto: 'Risotto',
-    dish_burger: 'Burger', dish_sopa: 'Soup', dish_postre: 'Dessert',
+    dish_pizza: 'Pizza', dish_sushi: 'Sushi', dish_filete: 'Steak',
+    dish_risotto: 'Risotto', dish_burger: 'Burger',
 
     fun_kicker: 'Features',
     fun_h2: 'Everything you need to price with confidence',
@@ -282,9 +279,8 @@ const I18N = {
     chip_fc: 'Food cost',
     chip_ben: 'Bénéfice',
 
-    dish_pizza: 'Pizza', dish_bolonesa: 'Bolognaise', dish_sushi: 'Sushi',
-    dish_filete: 'Entrecôte', dish_ensalada: 'Salade', dish_risotto: 'Risotto',
-    dish_burger: 'Burger', dish_sopa: 'Soupe', dish_postre: 'Dessert',
+    dish_pizza: 'Pizza', dish_sushi: 'Sushi', dish_filete: 'Entrecôte',
+    dish_risotto: 'Risotto', dish_burger: 'Burger',
 
     fun_kicker: 'Fonctions',
     fun_h2: 'Tout ce qu’il faut pour fixer vos prix sereinement',
@@ -369,9 +365,8 @@ const I18N = {
     chip_fc: 'Food cost',
     chip_ben: 'Guadagno',
 
-    dish_pizza: 'Pizza', dish_bolonesa: 'Bolognese', dish_sushi: 'Sushi',
-    dish_filete: 'Entrecôte', dish_ensalada: 'Insalata', dish_risotto: 'Risotto',
-    dish_burger: 'Burger', dish_sopa: 'Zuppa', dish_postre: 'Dolce',
+    dish_pizza: 'Pizza', dish_sushi: 'Sushi', dish_filete: 'Entrecôte',
+    dish_risotto: 'Risotto', dish_burger: 'Burger',
 
     fun_kicker: 'Funzioni',
     fun_h2: 'Tutto quello che serve per prezzi intelligenti',

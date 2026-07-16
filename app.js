@@ -1,6 +1,6 @@
 // ===== Menu Cost · Landing =====
 // Idiomas (ES/DE/EN/FR/IT, como la app) + animaciones: nav al hacer scroll,
-// reveals, marquee infinito, donut de food cost, barras y contadores.
+// reveals, donut de food cost, barras y contadores.
 // Sin dependencias.
 
 (function () {
@@ -95,11 +95,6 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  /* ================== MARQUEE: duplicar para el bucle ================== */
-  const marquee = document.getElementById('marquee');
-  if (marquee) marquee.innerHTML += marquee.innerHTML;
-
-  // aplicar idioma DESPUÉS de duplicar el marquee, para que cubra ambas copias
   aplicarIdioma(idiomaInicial());
 
   /* ================== CONTADORES ================== */

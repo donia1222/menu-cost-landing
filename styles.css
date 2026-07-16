@@ -216,26 +216,6 @@ h4 { font-size: 1.05rem; font-weight: 700; }
   .chip-fc { left: 6px; } .chip-ben { right: 6px; }
 }
 
-/* ---------- marquee ---------- */
-.marquee { padding: 44px 0 10px; overflow: hidden; mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
-.marquee-track { display: flex; gap: 20px; width: max-content; animation: slide 36s linear infinite; }
-.marquee:hover .marquee-track { animation-play-state: paused; }
-@keyframes slide { to { transform: translateX(-50%); } }
-.marquee figure {
-  display: flex; flex-direction: column; align-items: center; gap: 10px;
-  background: var(--bg-el); border: 1px solid var(--line);
-  border-radius: 22px; padding: 18px 22px 14px; min-width: 150px;
-}
-.marquee img { width: 84px; height: 84px; object-fit: contain; }
-.marquee figcaption { font-size: .82rem; font-weight: 700; color: var(--text-2); white-space: nowrap; }
-@media (max-width: 720px) {
-  .marquee { padding: 32px 0 8px; }
-  .marquee-track { gap: 12px; }
-  .marquee figure { min-width: 108px; padding: 12px 14px 10px; border-radius: 18px; gap: 6px; }
-  .marquee img { width: 56px; height: 56px; }
-  .marquee figcaption { font-size: .74rem; }
-}
-
 /* ---------- secciones ---------- */
 .section { padding: 96px 0; }
 .section-alt { background: var(--bg-el); border-block: 1px solid var(--line); }
@@ -494,6 +474,6 @@ h4 { font-size: 1.05rem; font-weight: 700; }
 
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
-  .float-a, .float-b, .marquee-track { animation: none; }
+  .float-a, .float-b { animation: none; }
   html { scroll-behavior: auto; }
 }
