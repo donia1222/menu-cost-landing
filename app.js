@@ -20,11 +20,11 @@
     return 'es';
   }
 
-  // en móvil el hero usa el vídeo vertical; en pantallas grandes el horizontal
+  // en móvil el hero usa el reel vertical subtitulado; en pantallas grandes el horizontal
   const heroVertical = window.matchMedia('(max-width: 720px)');
   function heroSrc(lang) {
     return heroVertical.matches
-      ? 'assets/menu-calculate-vertical-' + lang + '.mp4'
+      ? 'assets/videospromo/reel-' + lang + '.mp4'
       : 'assets/hero-' + lang + '.mp4';
   }
 
@@ -169,12 +169,12 @@
     if (langActual) aplicarIdioma(langActual);
   });
 
-  /* de momento el vídeo vertical solo existe en alemán: si falta en un
-     idioma, caer a la versión alemana en vez de dejar el hero en negro */
+  /* el reel vertical existe en los 5 idiomas; el fallback a alemán queda como
+     red de seguridad por si algún archivo faltara en el servidor */
   const heroVid = document.getElementById('heroVideo');
   heroVid?.addEventListener('error', () => {
-    if (heroVid.src.includes('vertical-') && !heroVid.src.endsWith('vertical-de.mp4')) {
-      heroVid.src = 'assets/menu-calculate-vertical-de.mp4';
+    if (heroVid.src.includes('/reel-') && !heroVid.src.endsWith('reel-de.mp4')) {
+      heroVid.src = 'assets/videospromo/reel-de.mp4';
       heroVid.load();
       heroVid.play().catch(() => {});
     }
