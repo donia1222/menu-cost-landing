@@ -425,6 +425,8 @@ h4 { font-size: 1.05rem; font-weight: 700; }
 .footer-links a { font-size: .92rem; font-weight: 600; color: var(--text-2); transition: color .15s; }
 .footer-links a:hover { color: var(--accent); }
 .footer-copy { font-size: .85rem; color: var(--text-2); }
+.footer-copy a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.footer-copy a:hover { color: var(--accent); }
 
 /* ---------- páginas legales (privacy.html / terms.html) ---------- */
 .legal-page { padding: 120px 0 80px; }

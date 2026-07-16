@@ -88,7 +88,7 @@ const I18N = {
     foot_contacto: 'Contacto',
     foot_priv: 'Política de privacidad',
     foot_term: 'Términos de uso',
-    foot_copy: '© 2026 lweb.ch — Hecho con cariño en Suiza',
+    foot_copy: 'Hecho con cariño en Suiza 🇨🇭',
   },
 
   de: {
@@ -176,7 +176,7 @@ const I18N = {
     foot_contacto: 'Kontakt',
     foot_priv: 'Datenschutzerklärung',
     foot_term: 'Nutzungsbedingungen',
-    foot_copy: '© 2026 lweb.ch — Mit Liebe gemacht in der Schweiz',
+    foot_copy: 'Mit Liebe gemacht in der Schweiz 🇨🇭',
   },
 
   en: {
@@ -264,7 +264,7 @@ const I18N = {
     foot_contacto: 'Contact',
     foot_priv: 'Privacy policy',
     foot_term: 'Terms of use',
-    foot_copy: '© 2026 lweb.ch — Made with care in Switzerland',
+    foot_copy: 'Made with care in Switzerland 🇨🇭',
   },
 
   fr: {
@@ -352,7 +352,7 @@ const I18N = {
     foot_contacto: 'Contact',
     foot_priv: 'Politique de confidentialité',
     foot_term: 'Conditions d’utilisation',
-    foot_copy: '© 2026 lweb.ch — Fait avec soin en Suisse',
+    foot_copy: 'Fait avec soin en Suisse 🇨🇭',
   },
 
   it: {
@@ -440,6 +440,6 @@ const I18N = {
     foot_contacto: 'Contatto',
     foot_priv: 'Informativa sulla privacy',
     foot_term: 'Termini d’uso',
-    foot_copy: '© 2026 lweb.ch — Fatto con cura in Svizzera',
+    foot_copy: 'Fatto con cura in Svizzera 🇨🇭',
   },
 };
