@@ -195,18 +195,19 @@ h4 { font-size: 1.05rem; font-weight: 700; }
 .hero-mini { display: flex; gap: 22px; list-style: none; margin-top: 4px; }
 .hero-mini li { display: flex; align-items: center; gap: 7px; font-size: .92rem; font-weight: 600; color: var(--text-2); }
 
-.hero-media { position: relative; }
+/* el hero lleva el reel vertical en todos los tamaños; se limita el ancho para
+   que en escritorio no crezca a lo alto, y los chips (posicionados respecto a
+   .hero-media) sigan pegados a la tarjeta */
+.hero-media { position: relative; max-width: 340px; margin: 0 auto; }
 .video-card {
   border-radius: var(--radius); overflow: hidden;
   border: 1px solid var(--line); background: var(--bg-el);
   box-shadow: var(--shadow);
 }
-.video-card video { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.video-card video { width: 100%; aspect-ratio: 9 / 16; object-fit: cover; }
 .tilt { transform: rotate(1.6deg); }
 @media (max-width: 720px) {
-  /* en móvil el hero lleva el vídeo vertical */
-  .hero-media .video-card { max-width: 300px; margin: 0 auto; }
-  .hero-media .video-card video { aspect-ratio: 9 / 16; }
+  .hero-media { max-width: 300px; }
 }
 
 /* chips flotantes */

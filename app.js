@@ -20,20 +20,14 @@
     return 'es';
   }
 
-  // en móvil el hero usa el reel vertical subtitulado; en pantallas grandes el horizontal
-  const heroVertical = window.matchMedia('(max-width: 720px)');
+  // el hero usa el reel vertical subtitulado en todos los tamaños de pantalla
   function heroSrc(lang) {
-    return heroVertical.matches
-      ? 'assets/videospromo/reel-' + lang + '.mp4'
-      : 'assets/hero-' + lang + '.mp4';
+    return 'assets/videospromo/reel-' + lang + '.mp4';
   }
-
-  let langActual = null;
 
   function aplicarIdioma(lang) {
     const d = I18N[lang];
     if (!d) return;
-    langActual = lang;
     document.documentElement.lang = lang;
     document.title = d.meta_title;
     const meta = document.querySelector('meta[name="description"]');
@@ -167,11 +161,6 @@
   document.getElementById('cookiesOk')?.addEventListener('click', () => {
     localStorage.setItem('mc-cookies', '1');
     cookies.hidden = true;
-  });
-
-  /* si se gira el móvil / cambia el ancho, cambiar entre vertical y horizontal */
-  heroVertical.addEventListener('change', () => {
-    if (langActual) aplicarIdioma(langActual);
   });
 
   /* ================== MODAL GOOGLE PLAY (próximamente) ================== */
