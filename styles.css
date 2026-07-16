@@ -172,6 +172,26 @@ h4 { font-size: 1.05rem; font-weight: 700; }
 .store-badges-big { justify-content: center; margin-top: 10px; }
 .store-badges-big .store-badge img { height: 60px; }
 @media (max-width: 480px) { .store-badge img { height: 46px; } .store-badges-big .store-badge img { height: 50px; } }
+/* el badge de Google Play es un botón (abre el modal "próximamente"), no un enlace */
+.gp-soon { background: none; border: 0; padding: 0; cursor: pointer; font: inherit; }
+
+/* ---------- modal Google Play próximamente ---------- */
+.gp-modal { position: fixed; inset: 0; z-index: 90; display: grid; place-items: center; padding: 24px; }
+.gp-modal[hidden] { display: none; }
+.gp-modal-backdrop { position: absolute; inset: 0; background: rgba(33, 31, 28, .55); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
+.gp-modal-card {
+  position: relative;
+  display: grid; gap: 14px; justify-items: center;
+  background: var(--bg-el); border: 1px solid var(--line); border-radius: 24px;
+  padding: 34px 28px; max-width: 420px; width: 100%; text-align: center;
+  box-shadow: var(--shadow);
+  animation: gp-pop .28s ease;
+}
+@keyframes gp-pop { from { opacity: 0; transform: translateY(14px) scale(.97); } }
+.gp-modal-badge { height: 56px; }
+.gp-modal-card h3 { margin: 4px 0 0; font-size: 1.35rem; }
+.gp-modal-card p { margin: 0 0 6px; color: var(--text-2); }
+@media (prefers-reduced-motion: reduce) { .gp-modal-card { animation: none; } }
 .hero-mini { display: flex; gap: 22px; list-style: none; margin-top: 4px; }
 .hero-mini li { display: flex; align-items: center; gap: 7px; font-size: .92rem; font-weight: 600; color: var(--text-2); }
 
