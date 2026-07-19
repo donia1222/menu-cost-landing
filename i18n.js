@@ -13,7 +13,7 @@ const I18N = {
 
     hero_kicker: 'Para tu restaurante',
     hero_h1: '¿Sabes cuánto te deja <em>cada plato</em> de tu carta?',
-    hero_lead: 'Menu Calculate calcula el coste, el food cost y el beneficio de tus platos en segundos. Tú dices el plato con tu voz — el bot hace el resto.',
+    hero_lead: 'Menu Calculate es la calculadora de menú para restaurantes: calcula el coste, el food cost y el beneficio de tus platos en segundos. Tú dices el plato con tu voz — el bot hace el resto.',
     hero_cta1: 'Descargar en el App Store',
     hero_cta2: 'Ver cómo funciona',
     hero_mini1: 'Sin hojas de cálculo',
