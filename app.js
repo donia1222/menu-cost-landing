@@ -163,24 +163,6 @@
     cookies.hidden = true;
   });
 
-  /* ================== MODAL GOOGLE PLAY (próximamente) ================== */
-  const gpModal = document.getElementById('gpModal');
-  function gpAbrir() {
-    gpModal.hidden = false;
-    document.body.style.overflow = 'hidden';
-  }
-  function gpCerrar() {
-    gpModal.hidden = true;
-    document.body.style.overflow = '';
-  }
-  if (gpModal) {
-    document.querySelectorAll('.gp-soon').forEach((b) => b.addEventListener('click', gpAbrir));
-    gpModal.querySelectorAll('[data-gp-close]').forEach((el) => el.addEventListener('click', gpCerrar));
-    window.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && !gpModal.hidden) gpCerrar();
-    });
-  }
-
   /* el reel vertical existe en los 5 idiomas; el fallback a alemán queda como
      red de seguridad por si algún archivo faltara en el servidor */
   const heroVid = document.getElementById('heroVideo');

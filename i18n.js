@@ -56,9 +56,6 @@ const I18N = {
 
     cta_h2: 'Empieza hoy a cobrar lo que tus platos valen',
     cta_lead: 'Descarga Menu Calculate y pon tu carta a trabajar.',
-    gp_modal_titulo: 'Muy pronto en Google Play',
-    gp_modal_texto: 'La app estará disponible en Google Play en los próximos días. De momento puedes descargarla en el App Store para iOS.',
-    gp_modal_ok: 'Entendido',
     cta_btn: 'Descargar en el App Store',
     nav_planes: 'Planes',
     planes_kicker: 'Planes',
@@ -144,9 +141,6 @@ const I18N = {
 
     cta_h2: 'Verlange ab heute, was deine Gerichte wert sind',
     cta_lead: 'Lade Menu Calculate und lass deine Karte für dich arbeiten.',
-    gp_modal_titulo: 'Bald bei Google Play',
-    gp_modal_texto: 'Die App ist in den nächsten Tagen bei Google Play verfügbar. Bis dahin gibt es sie im App Store für iOS.',
-    gp_modal_ok: 'Verstanden',
     cta_btn: 'Im App Store laden',
     nav_planes: 'Preise',
     planes_kicker: 'Preise',
@@ -232,9 +226,6 @@ const I18N = {
 
     cta_h2: 'Start charging what your dishes are worth',
     cta_lead: 'Download Menu Calculate and put your menu to work.',
-    gp_modal_titulo: 'Coming soon to Google Play',
-    gp_modal_texto: 'The app will be available on Google Play in the next few days. For now you can download it on the App Store for iOS.',
-    gp_modal_ok: 'Got it',
     cta_btn: 'Download on the App Store',
     nav_planes: 'Pricing',
     planes_kicker: 'Pricing',
@@ -320,9 +311,6 @@ const I18N = {
 
     cta_h2: 'Facturez enfin vos plats à leur juste valeur',
     cta_lead: 'Téléchargez Menu Calculate et mettez votre carte au travail.',
-    gp_modal_titulo: 'Bientôt sur Google Play',
-    gp_modal_texto: 'L’application sera disponible sur Google Play dans les prochains jours. En attendant, téléchargez-la sur l’App Store pour iOS.',
-    gp_modal_ok: 'Compris',
     cta_btn: 'Télécharger sur l’App Store',
     nav_planes: 'Tarifs',
     planes_kicker: 'Tarifs',
@@ -408,9 +396,6 @@ const I18N = {
 
     cta_h2: 'Inizia oggi a farti pagare quanto valgono i tuoi piatti',
     cta_lead: 'Scarica Menu Calculate e metti il tuo menù al lavoro.',
-    gp_modal_titulo: 'Presto su Google Play',
-    gp_modal_texto: 'L’app sarà disponibile su Google Play nei prossimi giorni. Per ora puoi scaricarla sull’App Store per iOS.',
-    gp_modal_ok: 'Ho capito',
     cta_btn: 'Scarica dall’App Store',
     nav_planes: 'Prezzi',
     planes_kicker: 'Prezzi',
